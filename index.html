@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Hii Nandani❣️</strong>
+                        <p>
+                            CHAL YA EK BAAT BOL NA HAI APSA... <br><br>
+                            9 + 9 = 18 <br>
+                            18 x 18 = 324 <br>
+                            324 - 181 = ISKA ANS APKO DENA HAI <br>
+                            aur jo ans aaya ga to please please google ma uska meaning check kar ya ga... <br>
+                            Mujha Apsa Yo hi bol na tha.... <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
